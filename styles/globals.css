@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-control {
+    @apply bg-neutral-50 text-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 border-2 rounded-md border-neutral-300 dark:border-neutral-700 focus:border-emerald-500 dark:focus:border-emerald-500 outline-none py-2 px-3;
+  }
+  .data-table {
+    @apply border-collapse w-full;
+  }
+  .data-table th {
+    @apply py-3 px-2 text-left;
+  }
+  .data-table td {
+    @apply p-2;
+  }
+  .data-table td,
+  .data-table th {
+    @apply border border-black dark:border-white border-opacity-10 dark:border-opacity-10;
+  }
+  .nav-link {
+    @apply py-2 px-3 rounded transition-colors text-neutral-100 dark:text-neutral-900 hover:text-neutral-900 dark:hover:text-neutral-50 dark:hover:bg-emerald-500 hover:bg-emerald-400 outline-none;
+  }
+  .nav-link.active {
+    @apply dark:bg-emerald-500 dark:text-neutral-50 text-neutral-900 bg-emerald-400;
+  }
+}
